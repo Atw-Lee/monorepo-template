@@ -1,9 +1,14 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./src/index",
-  "types": "./src/index",
+  "main": "./lib/index",
+  "types": "./lib/index",
   "license": "MIT",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
     "build": "father build"
