@@ -1,81 +1,47 @@
-# Turborepo starter
+# What is this?
 
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+这是一个基于 Turborepo+pnpm+changesets+dumi 搭建的 monorepo 多包组件库。
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+这个工程包含`packages`及`apps`
 
-### Apps and Packages
+> 每个包都是 100%的 [TypeScript](https://www.typescriptlang.org/)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+### Apps
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- `docs`: 一个基于[dumi2](https://d.umijs.org/)搭建的组件静态站点
 
-### Utilities
+### Packages
 
-This Turborepo has some additional tools already setup for you:
+- `eslint-config-custom`: 一个可被共享的自定义 eslint 配置(包括 `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: 一个可被共享的 tsconfig 配置文件
+- `utils`: 一个可被共享的工具类包
+- `ui`: 一个在此工作区内可被共享的 UI 组件库
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Develop
 
-### Build
-
-To build all apps and packages, run the following command:
+要开发所有应用程序和包，运行以下命令:
 
 ```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
 pnpm dev
 ```
 
-### Remote Caching
+## Build
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+要构建所有的应用和包，运行以下命令:
 
 ```
-cd my-turborepo
-npx turbo login
+pnpm build
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+产物：
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+- `docs`——docs-dist
+- `utils`——lib
+- `ui`——es/lib
 
-```
-npx turbo link
-```
+## What you need to do
 
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- 修改每个包的名称，前边的组织换成你需要的
+- 。npmrc 文件中的 registry 换成你的私有源
