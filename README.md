@@ -44,4 +44,4 @@ pnpm build
 ## What you need to do
 
 - 修改每个包的名称，前边的组织换成你需要的
-- 。npmrc 文件中的 registry 换成你的私有源
+- .npmrc 文件中的 registry 换成你的私有源
