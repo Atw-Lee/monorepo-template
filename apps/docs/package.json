@@ -2,25 +2,19 @@
   "name": "docs",
   "version": "0.0.1",
   "description": "A react library developed with dumi",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "license": "MIT",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
     "build": "dumi build",
     "build:watch": "father dev",
-    "prepare": "husky install && dumi setup",
+    "dev": "dumi dev",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev"
   },
-  "authors": [],
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -43,13 +37,6 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
-  },
   "devDependencies": {
     "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
@@ -59,6 +46,16 @@
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-packagejson": "^2.4.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": []
 }
+
