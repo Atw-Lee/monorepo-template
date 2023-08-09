@@ -22,7 +22,8 @@
     "lint-staged": "^13.2.3",
     "prettier": "^2.5.1",
     "stylelint": "^15.10.2",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "^4.5.2"
   },
   "packageManager": "pnpm@8.6.10",
   "name": "monorepo-template",

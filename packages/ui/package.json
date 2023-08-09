@@ -16,9 +16,9 @@
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "@you-org/eslint-config-custom": "workspace:*",
     "react": "^17.0.2",
+    "@you-org/eslint-config-custom": "workspace:*",
     "@you-org/tsconfig": "workspace:*",
-    "typescript": "^4.5.2"
+    "@you-org/utils": "workspace:*"
   }
 }

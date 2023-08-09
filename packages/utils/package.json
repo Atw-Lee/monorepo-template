@@ -1,0 +1,17 @@
+{
+  "name": "@you-org/utils",
+  "version": "0.0.4",
+  "main": "./lib/index.ts",
+  "types": "./lib/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "build": "tsc"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@you-org/tsconfig": "workspace:*"
+  }
+}
