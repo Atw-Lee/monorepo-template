@@ -1,7 +1,7 @@
+import { Button } from '@you-org/ui';
 import React, { type FC } from 'react';
-import { Button } from 'ui';
 
-const Foo: FC<{ title: string }> = (props) => {
+const Foo: FC<{ title: string }> = () => {
   return <Button>123456</Button>;
 };
 

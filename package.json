@@ -5,7 +5,6 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "commit": "cz",
-    "postinstall": "husky install",
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
@@ -16,7 +15,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.46.0",
-    "eslint-config-custom": "workspace:*",
+    "@you-org/eslint-config-custom": "workspace:*",
     "father": "^4.3.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
