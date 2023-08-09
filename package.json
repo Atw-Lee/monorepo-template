@@ -5,7 +5,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "commit": "cz",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "changeset": "changeset && changeset version && git add . && cz"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
