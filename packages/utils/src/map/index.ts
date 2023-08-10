@@ -1,1 +1,1 @@
-export { stringDeduplication } from "./duplicateRemoval";
+export { stringDeduplication, add } from "./duplicateRemoval";

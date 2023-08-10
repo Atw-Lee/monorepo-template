@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "build": "tsc"
+    "build": "father build"
   },
   "files": [
     "lib"

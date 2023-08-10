@@ -14,10 +14,10 @@
 
 ### Packages
 
-- `eslint-config-custom`: 一个可被共享的自定义 eslint 配置(包括 `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: 一个可被共享的 tsconfig 配置文件
-- `utils`: 一个可被共享的工具类包
-- `ui`: 一个在此工作区内可被共享的 UI 组件库
+- `eslint-config-custom`: 一个可被共享的自定义 eslint 配置，我们使用了 alloy 的规则，如果你需要自己拓展也没有问题
+- `tsconfig`: 一个可被共享的 tsconfig 配置文件，我们设置了 base 和 react-library 两个配置，当然你也可以自己定义
+- `utils`: 工具包
+- `ui`: UI 组件包
 
 ## Develop
 
@@ -26,6 +26,8 @@
 ```
 pnpm dev
 ```
+
+你可以预览到 app 下的 docs 前端工程
 
 ## Build
 
@@ -39,7 +41,7 @@ pnpm build
 
 - `docs`——docs-dist
 - `utils`——lib
-- `ui`——es/lib
+- `ui`——es、lib、dist
 
 ## What you need to do
 

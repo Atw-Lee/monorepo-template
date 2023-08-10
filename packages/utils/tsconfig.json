@@ -1,9 +1,9 @@
 {
   "extends": "@you-org/tsconfig/base.json",
   "compilerOptions": {
-    "lib": ["ES2015"],
-    "target": "es6",
-    "outDir": "./lib"
+    "lib": ["es6"],
+    "target": "ES6",
+    "outDir": "./dist"
   },
   "include": ["src", "src/index.ts"]
 }
