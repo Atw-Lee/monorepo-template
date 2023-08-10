@@ -47,3 +47,11 @@ pnpm build
 
 - 修改每个包的名称，前边的组织换成你需要的
 - .npmrc 文件中的 registry 换成你的私有源
+
+## How to release？
+
+- 你修改了代码，并且测试通过
+- git 提交代码到仓库
+- 执行`pnpm build`进行编译
+- 编译通过后执行`pnpm changeset`根据步骤进行版本管理、记录 changelog、commit 代码
+- 执行`pnpm -r publish`进行发版
